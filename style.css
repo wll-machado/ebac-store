@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(222, 224, 224);
+    scroll-behavior: smooth;
+    transition: all 1s ease-in-out;
+}
+
+nav {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg,  rgba(3,3,94,1) 0%,rgb(11, 3, 179) 35%, rgb(3, 60, 126) 100%);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.7px);
+-webkit-backdrop-filter: blur(6.7px);
+
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 6vh;
+
+ padding: 0 5%;
+}
+
+nav div {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    margin-top: 10px;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section img {
+    width: 90%;
+}
+
+section h2 {
+    padding: 4% 0;
+    
+    color: rgb(11, 3, 179);
+    
+    border-bottom: 2px solid rgb(11, 3, 179);
+    margin-bottom: 4%;
+}
+
+section p {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 4%;
+}
+
+.container {
+    width: 90%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+}
+.card img{
+    width: 100%;
+}
+
+.card h3 {
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 2% ;
+}
+
+.card span {
+    color: #000;
+    margin-bottom: 2%;
+}
+
+.card button{
+    padding: 4% 2%;
+    background-color: #0067da;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 2% 0;
+
+    cursor: pointer;
+}
+
+.card button:hover {
+    filter: brightness(1.2);
+}
+@media screen and (min-width:641px) {
+
+    #produtos .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #produtos .container h2 {
+        width: 100%;
+    }
+    #produtos .container .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8%;
+        width: 45%;
+        height: 400px;
+    }
+
+    #produtos .container .card img {
+        width: 332px;
+        height: 232px;
+    }
+
+}
+@media screen and (min-width:1024px) {
+    nav{
+        padding: 0 10%;
+    }
+
+    nav div {
+        width: 20vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a:hover{
+        color: rgb(252, 67, 34);
+    }
+
+    section {
+        margin-top: 30px;
+        width: 97vw;
+    
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    section img {
+        width: 40%;
+    }
+
+    .container {
+        width: 40%;
+    }
+
+    #produtos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #produtos .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 90%;
+        gap: 2%;
+    }
+
+    #produtos .container h2{
+        width: 100%;
+    }
+
+    #produtos .container .card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8%;
+        width: 23%;
+        height: 400px;
+    }
+
+    #produtos .container .card img {
+        width: 100%;
+        height: 162px;
+        
+    }
+}
